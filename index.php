@@ -130,7 +130,7 @@
                 </p>
                 <p><a href="#" class="teal-text">plus de détails</a></p>
               </div>
-            </div>
+            </div>  
 
           </div>
         </div>
