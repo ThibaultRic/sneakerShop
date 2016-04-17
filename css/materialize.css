@@ -4244,7 +4244,7 @@ nav .input-field label.active {
 .navbar-fixed {
   position: relative;
   height: 56px;
-  z-index: 998;
+  z-index: 100002;
 }
 
 .navbar-fixed nav {
