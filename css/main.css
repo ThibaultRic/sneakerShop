@@ -1,3 +1,5 @@
+@import "materialize.css";
+
 @media screen and (min-width: 640px) {
   img {
     max-width: 100%;
@@ -10,6 +12,17 @@
   }
 }
 
-.navbar-fixed{
-    width: 100%;
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+ color: teal;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+ border-bottom: 1px solid teal;
+}
+
+/* valid color */
+.input-field input[type=text].valid {
+ border-bottom: 1px solid teal;
 }
