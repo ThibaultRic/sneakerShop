@@ -131,7 +131,80 @@
                 <p><a href="#" class="teal-text">plus de détails</a></p>
               </div>
             </div>  
+          </div>
+          <div class="row">
+            <div class=" col l4 m12 s12 card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="src/img/products/jordan/jordan1BlueRoyal/1.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Air Jordan 1<i class="material-icons right">more_vert</i></span>
 
+                <p>Royal Blue / Black</p>
+              </div>
+
+              <div class="card-action">
+                <a href="#" class="teal-text">139,90 €</a>
+                <a href="#" class="teal-text"><i class="material-icons right">add_shopping_cart</i></a>
+              </div>
+
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Air Jordan 1<i class="material-icons right">close</i></span>
+                <p>
+                  <span>La jordan 1 dans son coloris Bleu royal.</span>
+                  <span>Réedition du modèle iconique de la marque Jordan dans son coloris bleu royal et noir</span>
+                </p>
+                <p><a href="#" class="teal-text">plus de détails</a></p>
+              </div>
+            </div>
+            <div class=" col l4 m12 s12 card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="src/img/products/jordan/jordan1BlueRoyal/1.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Air Jordan 1<i class="material-icons right">more_vert</i></span>
+
+                <p>Royal Blue / Black</p>
+              </div>
+
+              <div class="card-action">
+                <a href="#" class="teal-text">139,90 €</a>
+                <a href="#" class="teal-text"><i class="material-icons right">add_shopping_cart</i></a>
+              </div>
+
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Air Jordan 1<i class="material-icons right">close</i></span>
+                <p>
+                  <span>La jordan 1 dans son coloris Bleu royal.</span>
+                  <span>Réedition du modèle iconique de la marque Jordan dans son coloris bleu royal et noir</span>
+                </p>
+                <p><a href="#" class="teal-text">plus de détails</a></p>
+              </div>
+            </div>
+            <div class=" col l4 m12 s12 card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="src/img/products/jordan/jordan1BlueRoyal/1.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Air Jordan 1<i class="material-icons right">more_vert</i></span>
+
+                <p>Royal Blue / Black</p>
+              </div>
+
+              <div class="card-action">
+                <a href="#" class="teal-text">139,90 €</a>
+                <a href="#" class="teal-text"><i class="material-icons right">add_shopping_cart</i></a>
+              </div>
+
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Air Jordan 1<i class="material-icons right">close</i></span>
+                <p>
+                  <span>La jordan 1 dans son coloris Bleu royal.</span>
+                  <span>Réedition du modèle iconique de la marque Jordan dans son coloris bleu royal et noir</span>
+                </p>
+                <p><a href="#" class="teal-text">plus de détails</a></p>
+              </div>
+            </div>  
           </div>
         </div>
       <!-- End Content -->
