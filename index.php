@@ -15,6 +15,9 @@
     </head>
 
     <body>
+      <div class="navbar-fixed">
+
+        <!-- Menu -->
         <nav>
             <div class="nav-wrapper teal">
                 <a href="index.php" class="brand-logo center">Sneaker Shop</a>
@@ -33,7 +36,25 @@
                 <a href="#" data-activates="mobile-demo"><i class="right material-icons">shopping_cart</i>
             </div>
         </nav>
+        <!-- End Menu -->
 
+        <!-- Content -->
+        <div class="parallax-container">
+          <div class="parallax"><img src="src/img/fallingJordan.jpg"></div>
+        </div>
+        <div class="section white">
+          <div class="row container">
+            <h2 class="header teal-text">Le Premier site de la sneaker</h2>
+            <p class="grey-text text-darken-3 lighten-3">Sur ce site retrouvez toutes les dernieres sorties de vos marques préférées de baskets. </p>
+            <p class="grey-text text-darken-3 lighten-3"># Feel the Hype</p>
+          </div>
+        </div>
+        <div class="parallax-container">
+          <div class="parallax"><img src="src/img/sneakerWall.jpg"></div>
+        </div>
+        <!-- End Content -->
+
+        <!-- Footer -->
         <footer class="page-footer teal">
             <div class="container">
             <div class="row">
@@ -59,6 +80,9 @@
             </div>
             </div>
         </footer>
+        <!-- End Footer -->
+
+      </div>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
