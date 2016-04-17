@@ -42,7 +42,7 @@
 
       <!-- Content -->
         <div class="parallax-container">
-          <div class="parallax"><img src="src/img/fallingJordan.jpg"></div>
+          <div class="parallax"><img class="backgroundImg" src="src/img/fallingJordan.jpg"></div>
         </div>
         <div class="section container white">
           <div class="row">
@@ -55,7 +55,7 @@
           </div>
         </div>
         <div class="parallax-container">
-          <div class="parallax"><img src="src/img/sneakerWall.jpg"></div>
+          <div class="parallax"><img class="backgroundImg" src="src/img/sneakerWall.jpg"></div>
         </div>
 
         <!-- last products -->
@@ -70,7 +70,7 @@
           die("Impossible de se connecter : " . mysql_error());
           mysql_select_db("sneakerShop");
  
-          $result = mysql_query("SELECT * FROM product ORDER BY created_at DESC LIMIT 3");
+          $result = mysql_query("SELECT * FROM product ORDER BY created_at DESC LIMIT 6");
  
           while ($row = mysql_fetch_array($result, MYSQL_BOTH)) {
             $name = $row["name"];
@@ -82,7 +82,7 @@
 
             <div class=" col l4 m12 s12 card">
               <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="src/img/products/<?php echo $productPic; ?>">
+                <img class="activator responsive-img" src="src/img/products/<?php echo $productPic; ?>">
               </div>
               <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4"><?php echo $name; ?><i class="material-icons right">more_vert</i></span>
@@ -116,7 +116,7 @@
         <!-- End last Products -->
 
         <div class="parallax-container">
-          <div class="parallax"><img src="src/img/sneakerVecto.jpeg"></div>
+          <div class="parallax"><img class="backgroundImg" src="src/img/sneakerVecto.jpeg"></div>
         </div>
         <div class="section container white">
           <div class="row">
@@ -143,8 +143,8 @@
               </div>
               <div class="row">
                 <div class="input-field col s12">
-                  <select multiple required>
-                    <option value="" disabled selected>Choisissez la/les raisons(s)</option>
+                  <select required>
+                    <option value="" disabled selected>Choisissez la raison</option>
                     <option value="1">Je cherche un modèle en particulier</option>
                     <option value="2">Informations sur une commande</option>
                     <option value="3">Disponibilité des produits</option>
