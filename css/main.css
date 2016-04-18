@@ -26,3 +26,7 @@
 .input-field input[type=text].valid {
  border-bottom: 1px solid teal;
 }
+
+nav .shoppingCart {
+    padding-right: 2%;
+}

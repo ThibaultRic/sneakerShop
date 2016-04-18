@@ -34,7 +34,7 @@
                 <li><a href="collapsible.html" class="white-text">Javascript</a></li>
                 <li><a href="mobile.html" class="white-text">Mobile</a></li>
             </ul>
-            <a href="#"><i class="right material-icons">shopping_cart</i></a>
+            <a href="#"><i class="shoppingCart right material-icons">shopping_cart</i></a>
           </div>
         </nav>
       </div>
