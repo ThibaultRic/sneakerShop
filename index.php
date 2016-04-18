@@ -1,3 +1,7 @@
+<?php
+include 'dbconnect.php';
+?>
+
 <!DOCTYPE html>
   <html>
     <head>
@@ -66,9 +70,6 @@
           </div>
         <div class="row">
           <?php
-            mysql_connect("localhost", "root", "tIbO") or
-            die("Impossible de se connecter : " . mysql_error());
-            mysql_select_db("sneakerShop");
             $result = mysql_query("SELECT * FROM product ORDER BY created_at DESC LIMIT 6");
             while ($row = mysql_fetch_array($result, MYSQL_BOTH)) {
               $name = $row["name"];
@@ -198,7 +199,7 @@
         </div>
       </footer>
       <!-- End Footer -->
-      
+
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
