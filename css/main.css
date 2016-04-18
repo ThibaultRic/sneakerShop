@@ -30,3 +30,13 @@
 nav .shoppingCart {
     padding-right: 2%;
 }
+
+.product-image{
+    width: 60%;
+    float: left;
+}
+.product-mainImage{
+    padding-bottom: 5%;
+}
+
+
