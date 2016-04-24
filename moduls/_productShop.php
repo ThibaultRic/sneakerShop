@@ -6,7 +6,7 @@
     <div class="size">
     <?php include '_sizeTable.php'; ?>
     </div>
-    <section class="white center">
-    <a class="waves-effect waves-light btn-large"><i class="shoppingCart left material-icons">shopping_cart</i>Add to cart</a>
-    </section>
+    <div class="white center shopBtn">
+        <a class="waves-effect waves-light btn-large"><i class="shoppingCart left material-icons">shopping_cart</i>Add to cart</a>
+    </div>
 </div>

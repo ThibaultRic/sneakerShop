@@ -25,7 +25,11 @@ img.responsiveImg{
 
 .sizeBtn{
     font-size: 12px;
-    width: 32%;
+    width: 33%;
+}
+
+.size{
+    padding-bottom: 10px;
 }
 
 
