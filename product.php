@@ -32,18 +32,15 @@
 
     <?php include 'moduls/_nav.php'; ?>
 
-    <div class="container product">
+    <div class="container">
+        <div class="row"></div>
         <div class="row">
-        </div>
-        <div = "col s9">
-            <div class=" container product-image">
-                <div class="row">
-                    <div class="col s12 product-mainImage">
-                        <img class="materialboxed responsive-img center" src="src/img/products/<?php echo $productPic ?>">
-                    </div>
+            <div class="col s8 product-Images">
+                <div class="product-mainImage">
+                    <img class="materialboxed responsiveImg" src="src/img/products/<?php echo $productPic ?>">
                 </div>
-                <div class="row product-moreImage">
-                    <?php
+
+                <?php
                         $resultImg = mysql_query("SELECT * FROM picture WHERE product_id = $daProduct");
                         while ($row = mysql_fetch_array($resultImg, MYSQL_BOTH)) {
                         $imgId = $row["id"];
@@ -51,15 +48,14 @@
                         $imgUrl = $row["url"];
                         $imgProductId = $row["product_id"];
                         ?>
-                        <div class="col s3"><img  class="responsive-img" src="src/img/products/<?php echo $imgUrl ?>" alt="<?php echo $imgName ?>"></div>
+                       <div class="thumbnails">
+                        <img  class="responsiveImg" src="src/img/products/<?php echo $imgUrl ?>" alt="<?php echo $imgName ?>">
+                </div>
                     <?php
                     }
                     ?>
-                </div>
             </div>
-        </div>
-        <div class=" col s3 product-shop">
-            <h2 class="header center teal-text"><?php echo $name ?></h2>
+            <div class="product-shop col s4 grey" style="height:450px"></div>
         </div>
     </div>
 

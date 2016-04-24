@@ -12,6 +12,17 @@
   }
 }
 
+img.responsiveImg{
+    width: 100%;
+    height: auto;
+}
+
+.thumbnails{
+    width:25%;
+    height:150px;
+    float: left;
+}
+
 
 /* label focus color */
 .input-field input[type=text]:focus + label {
