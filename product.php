@@ -37,52 +37,8 @@
     <div class="container">
         <div class="row"></div>
         <div class="row">
-            <div class="col s12 l8 m8 product-Images">
-                <div class="product-mainImage owl-carousel">
-                    <?php
-                        $resultImg = mysql_query("SELECT * FROM picture WHERE product_id = $daProduct");
-                        while ($row = mysql_fetch_array($resultImg, MYSQL_BOTH)) {
-                        $imgId = $row["id"];
-                        $imgName = $row["name"];
-                        $imgUrl = $row["url"];
-                        $imgProductId = $row["product_id"];
-                    ?>
-                    <div data-hash="<?php echo $imgId ?>">
-                    <img class="responsiveImg" src="src/img/products/<?php echo $imgUrl ?>">
-                    </div>
-                    <?php
-                    }
-                    ?>
-                </div>
-
-                <?php
-                        $resultImg = mysql_query("SELECT * FROM picture WHERE product_id = $daProduct");
-                        while ($row = mysql_fetch_array($resultImg, MYSQL_BOTH)) {
-                        $imgId = $row["id"];
-                        $imgName = $row["name"];
-                        $imgUrl = $row["url"];
-                        $imgProductId = $row["product_id"];
-                        ?>
-                       <div class="thumbnails">
-                            <a class="button secondary url" href="#<?php echo $imgId ?>">
-                                <img class="responsiveImg" src="src/img/products/<?php echo $imgUrl ?>" alt="<?php echo $imgName ?>" data-id="<?php echo $imgId ?>">
-                            </a>
-                        </div>
-                    <?php
-                    }
-                    ?>
-            </div>
-            <div class="product-shop col s12 m4 l4 white " >
-                <h5><?php echo $brand ?></h5>
-
-                <h1 class="header center"><?php echo $name ?></h1>
-                <h3 class="center teal-text"><?php echo $price?>€</h3>
-                <div class="size">
-                </div>
-                <section class="white center">
-                <a class="waves-effect waves-light btn-large"><i class="shoppingCart left material-icons">shopping_cart</i>Add to cart</a>
-                </section>
-            </div>
+        <?php include 'moduls/_productImages.php' ?>
+        <?php include 'moduls/_productShop.php' ?>
         </div>
     </div>
 

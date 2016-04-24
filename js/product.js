@@ -11,4 +11,10 @@ $(document)
         });
     });
 
+    $(function(){
+        $(".sizeTable li").click(function () {
+             $(this).addClass("selected").siblings().removeClass("selected");
+             $(this).addClass("teal").siblings().removeClass("teal");
+        });
+    })
 

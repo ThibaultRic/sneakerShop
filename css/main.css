@@ -23,6 +23,11 @@ img.responsiveImg{
     float: left;
 }
 
+.sizeBtn{
+    font-size: 12px;
+    width: 32%;
+}
+
 
 /* label focus color */
 .input-field input[type=text]:focus + label {
