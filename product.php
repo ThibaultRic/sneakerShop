@@ -1,4 +1,16 @@
-<?php include 'dbconnect.php'; ?>
+<?php include 'dbconnect.php';
+    $daProduct = $_GET['data'];
+    $result = mysql_query("SELECT * FROM product p WHERE p.id = $daProduct");
+    while ($row = mysql_fetch_array($result, MYSQL_BOTH)) {
+        $id = $row["id"];
+        $name = $row["name"];
+        $subName = $row["subName"];
+        $productPic = $row["productPic"];
+        $price = $row["price"];
+        $description = $row["description"];
+      }
+    mysql_free_result($result);
+?>
 
 <!DOCTYPE html>
   <html>
@@ -21,24 +33,34 @@
     <?php include 'moduls/_nav.php'; ?>
 
     <div class="container product">
-        <div class="product-image">
-            <div class="product-mainImage">
-                <img class="materialboxed responsive-img" src="src/img/products/jordan/jordan1BlueRoyal/3.jpg">
-            </div>
-            <div class="row product-moreImage">
-                <div class="col s3"><img  class="responsive-img" src="src/img/products/jordan/jordan1BlueRoyal/1.jpg"></div>
-                <div class="col s3"><img class="responsive-img" src="src/img/products/jordan/jordan1BlueRoyal/2.jpg"></div>
-                <div class="col s3"><img class="responsive-img" src="src/img/products/jordan/jordan1BlueRoyal/3.jpg"></div>
-                <div class="col s3"><img class="responsive-img" src="src/img/products/jordan/jordan1BlueRoyal/4.jpg"></div>
-               <!--  <ul>
-                    <li><img src="src/img/products/jordan/jordan1BlueRoyal/1.jpg"></li>
-                    <li><img src="src/img/products/jordan/jordan1BlueRoyal/2.jpg"></li>
-                    <li><img src="src/img/products/jordan/jordan1BlueRoyal/3.jpg"></li>
-                    <li><img src="src/img/products/jordan/jordan1BlueRoyal/4.jpg"></li>
-                </ul> -->
+        <div class="row">
+        </div>
+        <div = "col s9">
+            <div class=" container product-image">
+                <div class="row">
+                    <div class="col s12 product-mainImage">
+                        <img class="materialboxed responsive-img center" src="src/img/products/<?php echo $productPic ?>">
+                    </div>
+                </div>
+                <div class="row product-moreImage">
+                    <?php
+                        $resultImg = mysql_query("SELECT * FROM picture WHERE product_id = $daProduct");
+                        while ($row = mysql_fetch_array($resultImg, MYSQL_BOTH)) {
+                        $imgId = $row["id"];
+                        $imgName = $row["name"];
+                        $imgUrl = $row["url"];
+                        $imgProductId = $row["product_id"];
+                        ?>
+                        <div class="col s3"><img  class="responsive-img" src="src/img/products/<?php echo $imgUrl ?>" alt="<?php echo $imgName ?>"></div>
+                    <?php
+                    }
+                    ?>
+                </div>
             </div>
         </div>
-        <div class="product-shop"></div>
+        <div class=" col s3 product-shop">
+            <h2 class="header center teal-text"><?php echo $name ?></h2>
+        </div>
     </div>
 
         <!--Import jQuery before materialize.js-->

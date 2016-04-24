@@ -9,7 +9,7 @@
   </div>
 
   <div class="card-action">
-    <a href="#" class="teal-text"><?php echo $price; ?>€</a>
+    <span class="teal-text"><?php echo $price; ?>€</span>
     <a href="#" class="teal-text"><i class="material-icons right">add_shopping_cart</i></a>
   </div>
 
@@ -18,6 +18,6 @@
     <p>
       <?php echo $description;?>
     </p>
-    <p><a href="#" class="teal-text">plus de détails</a></p>
+    <p><a href="product.php?data=<?php echo $id ?>" class="teal-text">plus de détails</a></p>
   </div>
 </div>

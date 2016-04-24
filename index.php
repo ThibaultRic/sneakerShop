@@ -53,6 +53,7 @@ include 'dbconnect.php';
           <?php
             $result = mysql_query("SELECT * FROM product ORDER BY created_at DESC LIMIT 6");
             while ($row = mysql_fetch_array($result, MYSQL_BOTH)) {
+              $id = $row["id"];
               $name = $row["name"];
               $subName = $row["subName"];
               $productPic = $row["productPic"];
