@@ -1,15 +1,30 @@
 @import "materialize.css";
 
-@media screen and (min-width: 640px) {
-  .backgroundImg {
-    max-width: 100%;
-  }
+@media screen and (min-width: 1024px) {
+    .backgroundImg {
+        max-width: 100%;
+    }
+    .thumbnails .responsiveImg{
+        height: 150px;
+    }
 }
 
-@media screen and (max-width: 640px) {
-  .backgroundImg {
-    max-height: 100%;
-  }
+@media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+    .backgroundImg {
+        max-height: 100%;
+    }
+   img.responsiveImg{
+        height: 100%;
+    }
+    .thumbnails .responsiveImg{
+        height: 60px;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .thumbnails .responsiveImg{
+        height: 100px;
+    }
 }
 
 img.responsiveImg{
@@ -19,9 +34,10 @@ img.responsiveImg{
 
 .thumbnails{
     width:25%;
-    height:150px;
     float: left;
 }
+
+
 
 .sizeBtn{
     font-size: 12px;
