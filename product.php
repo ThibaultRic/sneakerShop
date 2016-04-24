@@ -1,6 +1,6 @@
 <?php include 'dbconnect.php';
     $daProduct = $_GET['data'];
-    $result = mysql_query("SELECT * FROM product p WHERE p.id = $daProduct");
+    $result = mysql_query("SELECT * FROM product p LEFT JOIN brand b on p.brand_id = b.id WHERE p.id = $daProduct");
     while ($row = mysql_fetch_array($result, MYSQL_BOTH)) {
         $id = $row["id"];
         $name = $row["name"];
@@ -8,6 +8,7 @@
         $productPic = $row["productPic"];
         $price = $row["price"];
         $description = $row["description"];
+        $brand = $row["brand"];
       }
     mysql_free_result($result);
 ?>
@@ -24,7 +25,6 @@
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
         <link rel="stylesheet" type="text/css" href="css/main.css" media="screen,projection">
         <link rel="stylesheet" href="css/owl.carousel.css">
-        <link rel="stylesheet" href="css/animate.css">
 
         <!--Let browser know website is optimized for mobile-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -72,16 +72,29 @@
                     }
                     ?>
             </div>
-            <div class="product-shop col s12 m4 l4 grey" style="height:450px"></div>
+            <div class="product-shop col s12 m4 l4 white " >
+                <h5><?php echo $brand ?></h5>
+
+                <h1 class="header center"><?php echo $name ?></h1>
+                <h3 class="center teal-text"><?php echo $price?>€</h3>
+                <div class="size">
+                </div>
+                <section class="white center">
+                <a class="waves-effect waves-light btn-large"><i class="shoppingCart left material-icons">shopping_cart</i>Add to cart</a>
+                </section>
+            </div>
         </div>
     </div>
 
-
+  <!-- Footer -->
+     <?php include 'moduls/_footer.php'; ?>
+      <!-- End Footer -->
 
         <!--Import jQuery before materialize.js-->
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/product.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
   </html>

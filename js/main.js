@@ -7,14 +7,6 @@ $(document)
         $('select').material_select();
         $('.slider').slider({full_width: false});
         $('.materialboxed').materialbox();
-        $(".owl-carousel").owlCarousel({
-            items:1,
-            animateOut:'fadeOut',
-            URLhashListener:true,
-            autoplayHoverPause:true,
-            startPosition: 'URLHash',
-            autoHeight:true,
-        });
     });
 
 
