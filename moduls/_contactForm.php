@@ -44,7 +44,7 @@
         <label for="optinNewsletter">S'inscrire à la newsletter</label>
       </p>
       <div class="row center">
-        <button class="btn-large teal waves-effect waves-light" type="button" name="action" onClick=" submitForm()">Envoyer
+        <button class="btn-large teal waves-effect waves-light" type="button" id="submit" name="action" >Envoyer
           <i class="material-icons right">send</i>
         </button>
         <p class="flow-text center teal-text" id="successMsg"></p>

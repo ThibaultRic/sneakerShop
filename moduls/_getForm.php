@@ -1,16 +1,13 @@
 <?php
+    $data = $_POST['data'];
 
-// $first_name = $_POST('first_name');
-// $last_name = $_POST('last_name');
-// $email = $_POST('email');
-// $reasons = $_POST('reasons');
-// $textarea1 = $_POST('textarea1');
-// $optinNewsletter = $_POST('optinNewsletter');
-
-echo "Votre message a bien été soumis";
-
-return true;
+    $first_name = $data[0];
+    $last_name = $data[1];
+    $email = $data[2];
+    $reasons = $data[3];
+    $textarea1 = $data[4];
+    $optinNewsletter = $data[5];
 
 
-
- ?>
+    return true;
+?>
