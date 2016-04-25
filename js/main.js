@@ -30,10 +30,8 @@ $("#submit").click(function(){
                 url:"moduls/_getForm.php",
                 data:{data:dataInfo},
                 success: function(data){
-                    console.log(dataInfo);
-                    // console.log(testData);
-                    // console.log("success");
                     $('#successMsg').html(data);
+                    $('#submit').addClass('disabled').html("<i class='material-icons left'>done</i>C'est parti !");
                 }
             });
 });
