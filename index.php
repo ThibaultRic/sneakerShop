@@ -65,6 +65,9 @@ include 'dbconnect.php';
               mysql_free_result($result);
             ?>
         </div>
+        <div class="row">
+          <h4 class="center"><a class="teal-text" href="allproduct.php">Voir tous nos produits ></a></h3>
+        </div>
       </div>
       <div class="section teal"></div>
       <!-- End last Products -->

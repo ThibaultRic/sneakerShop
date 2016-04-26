@@ -9,6 +9,8 @@ $(document)
         $('.materialboxed').materialbox();
         $('.collapsible').collapsible({accordion:true});
     });
+
+    // fonction qui vient faire fonctionner le formulaire de contact en homepage
 $("#submit").click(function(){
             var first_name = document.getElementById('first_name').value;
             var last_name = document.getElementById('last_name').value;

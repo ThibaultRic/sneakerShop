@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Mer 27 Avril 2016 à 00:17
+-- Généré le :  Mer 27 Avril 2016 à 01:46
 -- Version du serveur :  5.7.9
 -- Version de PHP :  5.5.30
 
@@ -78,7 +78,15 @@ INSERT INTO `picture` (`id`, `name`, `url`, `product_id`) VALUES
 (13, 'reebok Pump Blast (1)', 'reebok/pumpBlast/1.jpg', 3),
 (14, 'reebok Pump Blast (2)', 'reebok/pumpBlast/2.jpg', 3),
 (15, 'reebok Pump Blast (3)', 'reebok/pumpBlast/3.jpg', 3),
-(16, 'reebok Pump Blast (4)', 'reebok/pumpBlast/4.jpg', 3);
+(16, 'reebok Pump Blast (4)', 'reebok/pumpBlast/4.jpg', 3),
+(17, 'converseallstar', 'converse/allstar/1.jpg', 5),
+(18, 'converseallstar', 'converse/allstar/2.jpg', 5),
+(19, 'adidasamericana', 'adidas/americana/1.jpg', 6),
+(20, 'adidasamericana', 'adidas/americana/2.jpg', 6),
+(21, 'adidasamericana', 'adidas/americana/3.jpg', 6),
+(22, 'asicsgellyteIII', 'asics/gellyteIII/1.jpg', 7),
+(23, 'asicsgellyteIII', 'asics/gellyteIII/2.jpg', 7),
+(24, 'asicsgellyteIII', 'asics/gellyteIII/3.jpg', 7);
 
 -- --------------------------------------------------------
 
@@ -105,7 +113,10 @@ INSERT INTO `product` (`id`, `name`, `subName`, `price`, `description`, `created
 (1, 'Air Jordan 1 OG', 'Royal Blue / Black', '139.99', 'La jordan 1 dans son coloris Bleu royal.\r\nReedition du modele iconique de la marque Jordan dans son coloris bleu royal et noir', '2016-04-17 20:53:00', 'jordan/jordan1BlueRoyal/1.jpg', 1),
 (2, 'Adidas Top Ten', 'Originals', '99.99', 'Avec ses 3 bandes synthetiques et sa languette matelassee ornee du logo Top Ten original, la chaussure Top Ten Hi hommes a fiere allure sur le pave.', '2016-04-19 07:23:44', 'adidas/topTen/1.jpg', 2),
 (3, 'Pump Blast', 'Reebok', '150.00', 'Boostez votre look classique avec ces chaussures spectaculaires.\r\nC\'est ce qu\'on appelle un retour en force.', '2016-04-05 09:30:38', 'reebok/pumpBlast/1.jpg', 3),
-(4, 'Nike Air Max 90', 'Infrared', '125.90', 'La Nike Air Max 90 "Infrared est la declinaison la plus iconique de la plus populaire des baskets.', '2016-04-01 10:26:36', 'nike/airmax90Infra/1.jpg', 4);
+(4, 'Nike Air Max 90', 'Infrared', '125.90', 'La Nike Air Max 90 "Infrared est la declinaison la plus iconique de la plus populaire des baskets.', '2016-04-01 10:26:36', 'nike/airmax90Infra/1.jpg', 4),
+(5, 'Chuck Taylor All star', 'Converse', '75.00', 'La seule chaussure qui traverse les ages sans se démoder.\r\nUne paire qui s\'adapte à tout les styles et qui n\'a pas pris une ride', '2016-04-01 20:53:00', 'converse/allstar/1.jpg', 7),
+(6, 'Adidas Americana', 'Originals', '99.99', 'Surement une des perles cachées de la marque tribande.\r\nEclipse par sa soeur la Stan Smith. le modèle Americana reste une paire exceptionnelle et qui merite d\'etre connue ', '2016-04-19 07:23:44', 'adidas/americana/1.jpg', 2),
+(7, 'Asics Gel-Lyte III', 'Dark Blue / Orange', '87.00', 'Une petite paire qui sent bon le running. Dans son coloris estival, la petite dernière de chez Asics a tout pour vous plaire', '2016-04-19 07:23:44', 'asics/gellyteIII/1.jpg', 6);
 
 -- --------------------------------------------------------
 
@@ -159,7 +170,34 @@ INSERT INTO `product_has_sizeChart` (`product_id`, `sizeChart_id`, `quantity`) V
 (4, 6, 0),
 (4, 7, 8),
 (4, 8, 1),
-(4, 9, 0);
+(4, 9, 0),
+(5, 1, 9),
+(5, 2, 15),
+(5, 3, 0),
+(5, 4, 4),
+(5, 5, 10),
+(5, 6, 9),
+(5, 7, 4),
+(5, 8, 0),
+(5, 9, 2),
+(6, 1, 0),
+(6, 2, 7),
+(6, 3, 3),
+(6, 4, 9),
+(6, 5, 0),
+(6, 6, 0),
+(6, 7, 4),
+(6, 8, 3),
+(6, 9, 2),
+(7, 1, 4),
+(7, 2, 2),
+(7, 3, 0),
+(7, 4, 9),
+(7, 5, 3),
+(7, 6, 0),
+(7, 7, 4),
+(7, 8, 0),
+(7, 9, 2);
 
 -- --------------------------------------------------------
 
@@ -303,12 +341,12 @@ ALTER TABLE `brand`
 -- AUTO_INCREMENT pour la table `picture`
 --
 ALTER TABLE `picture`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 --
 -- AUTO_INCREMENT pour la table `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT pour la table `raisons`
 --

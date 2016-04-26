@@ -8,8 +8,8 @@
                 <li><a href="allProduct.php">Nos Produits</a></li>
             </ul>
             <ul class="side-nav teal" id="mobile-demo">
-                <li><a href="index.php">Accueil</a></li>
-                <li><a href="allProduct.php">Nos Produits</a></li>
+                <li><a class="white-text" href="index.php">Accueil</a></li>
+                <li><a class="white-text" href="allProduct.php">Nos Produits</a></li>
             </ul>
             <a href="#"><i class="shoppingCart right material-icons">shopping_cart</i></a>
         </div>
