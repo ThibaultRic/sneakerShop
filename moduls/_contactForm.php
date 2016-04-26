@@ -7,7 +7,7 @@
     <form class="col s12">
       <div class="row">
         <div class="input-field col s6">
-          <input id="first_name" name="first_name" type="text" class="validate" required>
+          <input id="first_name" name="first_name" type="text" class="validate" required/>
           <label for="first_name">Prénom</label>
         </div>
         <div class="input-field col s6">
@@ -23,7 +23,7 @@
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <select id="reasons" name="reasons" required>
+          <select id="reasons" name="reasons" required/>
             <option value="" disabled selected>Choisissez la raison</option>
             <option value="1">Je cherche un modèle en particulier</option>
             <option value="2">Informations sur une commande</option>
@@ -44,7 +44,7 @@
         <label for="optinNewsletter">S'inscrire à la newsletter</label>
       </p>
       <div class="row center">
-        <button class="btn-large teal waves-effect waves-light" type="button" id="submit" name="action" >Envoyer
+        <button class="btn-large teal waves-effect waves-light" type="submit" id="submit" name="action" >Envoyer
           <i class="material-icons right">send</i>
         </button>
         <p class="flow-text center teal-text" id="successMsg"></p>

@@ -7,6 +7,7 @@ $(document)
         $('select').material_select();
         $('.slider').slider({full_width: false});
         $('.materialboxed').materialbox();
+        $('.collapsible').collapsible({accordion:true});
     });
 $("#submit").click(function(){
             var first_name = document.getElementById('first_name').value;

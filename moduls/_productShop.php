@@ -4,7 +4,8 @@
     <h2 class="header center"><?php echo $name ?></h2>
     <h3 class="center teal-text"><?php echo $price?> €</h3>
     <div class="size">
-    <?php include '_sizeTable.php'; ?>
+        <h6 class="grey-text center">Choisissez votre pointure</h6>
+        <?php include '_sizeTable.php'; ?>
     </div>
     <div class="row"></div>
 
